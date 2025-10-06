@@ -1,0 +1,10 @@
+[package]
+name = "conv"
+version = "1.0.0"
+edition = "2024"
+authors = ["Mangus"]
+description = "Easy value converter for hex/dec/bin/oct systems"
+repository = "https://github.com/manguseqq/conv"
+license = "MIT"
+
+[dependencies]
