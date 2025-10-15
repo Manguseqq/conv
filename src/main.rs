@@ -37,6 +37,14 @@ fn main() {
         "-to_dec" => println!("{}", num),
         "-to_bin" => println!("{:b}", num),
         "-to_oct" => println!("{:o}", num),
+        "-to_all" => println!(
+            "[{}] Converted to:
+        hex: {:X}
+        dec: {}
+        bin: {:b}
+        oct: {:o}",
+            value,num, num, num, num
+        ),
         _ => eprintln!("Unkown value type: {}", output_type),
     }
 }
