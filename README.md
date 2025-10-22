@@ -1,10 +1,7 @@
 # Conv
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 ![Made with Rust](https://img.shields.io/badge/Made%20with-Rust-orange.svg)
-![CLI Tool](https://img.shields.io/badge/Type-CLI%20Tool-blue.svg)
-![Simple and Fast](https://img.shields.io/badge/Simple-Fast-success.svg)
-![Version](https://img.shields.io/badge/version-1.1.0-yellow.svg)
-![Cross Platform](https://img.shields.io/badge/Platform-Windows%20|%20Linux%20|%20macOS-lightgrey.svg)
+![Version](https://img.shields.io/badge/version-1.1.1-yellow.svg)
 
 A simple and useful value converter between number systems.
 
@@ -16,6 +13,15 @@ It's super simple! Just run:
 
 ```bash
 conv -<type> <value> -to_<type>
+```
+
+You can also use it as library!
+
+```rs
+fn main() {
+    let value = conv::convert("A", "hex", "dec").unwrap();
+    println!("Converted value: {}", value); // Output: Converted value: 10
+}
 ```
 
 ## ▶ For example:
